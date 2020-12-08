@@ -1,0 +1,48 @@
+.alt-header {
+  padding: var(--horizontal-space);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.alt-header__column {
+  width: 33%;
+}
+
+.alt-header h1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+
+.alt-header__column:last-child {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+} /* auto 복습 필요! */
+
+.alt-header__column span:last-child {
+  margin-left: 20px;
+}
+
+#chat-screen .alt-header,
+#chat-screen .status-bar {
+  background-color: #abc1d1;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0px;
+  z-index: 1;
+}
+
+#chat-screen .status-bar {
+  z-index: 2;
+}
